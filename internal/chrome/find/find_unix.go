@@ -56,3 +56,24 @@ func chromiumRoots() ([]string, error) {
 	}
 	return ret, nil
 }
+
+func braveRoots() ([]string, error) {
+	// "${XDG_CONFIG_HOME:-$HOME/.config}"
+	var dotConfigs, ret []string
+	// fallback
+	if home, err := os.UserHomeDir(); err == nil {
+		dotConfigs = append(dotConfigs, filepath.Join(home, `.config`))
+	}
+	if dir, ok := os.LookupEnv(`XDG_CONFIG_HOME`); ok {
+		dotConfigs = append(dotConfigs, dir)
+	}
+	for _, dotConfig := range dotConfigs {
+		ret = append(
+			ret,
+			filepath.Join(dotConfig, `BraveSoftware`, `Brave-Browser`),
+			filepath.Join(dotConfig, `BraveSoftware`, `Brave-Browser-Beta`),
+			filepath.Join(dotConfig, `BraveSoftware`, `Brave-Browser-Dev`),
+		)
+	}
+	return ret, nil
+}
