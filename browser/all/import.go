@@ -4,6 +4,7 @@ import (
 	_ "github.com/newbee1905/kooky/browser/browsh"
 	_ "github.com/newbee1905/kooky/browser/chrome"
 	_ "github.com/newbee1905/kooky/browser/chromium"
+	_ "github.com/newbee1905/kooky/browser/brave"
 	_ "github.com/newbee1905/kooky/browser/dillo"
 	_ "github.com/newbee1905/kooky/browser/edge"
 	_ "github.com/newbee1905/kooky/browser/elinks"
