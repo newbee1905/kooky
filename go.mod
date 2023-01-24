@@ -10,7 +10,6 @@ require (
 	github.com/keybase/go-keychain v0.0.0-20220408132150-ad3b4a8fd4a7
 	github.com/spf13/pflag v1.0.5
 	github.com/zalando/go-keyring v0.2.1
-	github.com/newbee1905/kooky v0.0.0-20221025221128-3e66d684c4db
 	golang.org/x/crypto v0.0.0-20220408190544-5352b0902921
 	golang.org/x/net v0.0.0-20220407224826-aac1ed45d8e3
 	golang.org/x/sys v0.0.0-20220408201424-a24fb2fb8a0f
