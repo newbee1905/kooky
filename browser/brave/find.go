@@ -1,10 +1,10 @@
 package brave
 
 import (
-	"github.com/zellyn/kooky"
-	"github.com/zellyn/kooky/internal/chrome"
-	"github.com/zellyn/kooky/internal/chrome/find"
-	"github.com/zellyn/kooky/internal/cookies"
+	"github.com/newbee1905/kooky"
+	"github.com/newbee1905/kooky/internal/chrome"
+	"github.com/newbee1905/kooky/internal/chrome/find"
+	"github.com/newbee1905/kooky/internal/cookies"
 )
 
 type BraveFinder struct{}

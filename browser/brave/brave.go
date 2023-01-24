@@ -3,9 +3,9 @@ package brave
 import (
 	"net/http"
 
-	"github.com/zellyn/kooky"
-	"github.com/zellyn/kooky/internal/chrome"
-	"github.com/zellyn/kooky/internal/cookies"
+	"github.com/newbee1905/kooky"
+	"github.com/newbee1905/kooky/internal/chrome"
+	"github.com/newbee1905/kooky/internal/cookies"
 )
 
 func ReadCookies(filename string, filters ...kooky.Filter) ([]*kooky.Cookie, error) {

@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/zellyn/kooky"
-	"github.com/zellyn/kooky/internal/cookies"
-	"github.com/zellyn/kooky/internal/netscape"
+	"github.com/newbee1905/kooky"
+	"github.com/newbee1905/kooky/internal/cookies"
+	"github.com/newbee1905/kooky/internal/netscape"
 )
 
 type lynxFinder struct{}

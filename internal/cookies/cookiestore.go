@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/zellyn/kooky"
+	"github.com/newbee1905/kooky"
 )
 
 // kooky.CookieStore without http.CookieJar and SubJar()

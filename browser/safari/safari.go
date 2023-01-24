@@ -12,9 +12,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/zellyn/kooky"
-	"github.com/zellyn/kooky/internal/cookies"
-	"github.com/zellyn/kooky/internal/timex"
+	"github.com/newbee1905/kooky"
+	"github.com/newbee1905/kooky/internal/cookies"
+	"github.com/newbee1905/kooky/internal/timex"
 )
 
 type fileHeader struct {
@@ -89,7 +89,7 @@ func (s *safariCookieStore) ReadCookies(filters ...kooky.Filter) ([]*kooky.Cooki
 		}
 	}
 
-	// TODO(zellyn): figure out how the checksum works.
+	// TODO(newbee1905): figure out how the checksum works.
 	var checksum [8]byte
 	err = binary.Read(s.File, binary.BigEndian, &checksum)
 	if err != nil {

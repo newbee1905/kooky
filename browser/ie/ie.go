@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/zellyn/kooky"
-	"github.com/zellyn/kooky/internal/cookies"
-	"github.com/zellyn/kooky/internal/ie"
+	"github.com/newbee1905/kooky"
+	"github.com/newbee1905/kooky/internal/cookies"
+	"github.com/newbee1905/kooky/internal/ie"
 )
 
 func ReadCookies(filename string, filters ...kooky.Filter) ([]*kooky.Cookie, error) {
